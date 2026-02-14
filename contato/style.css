@@ -65,6 +65,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   cursor: pointer;
   display: none;
+  margin-left: auto;
 }
 
 .navbar ul {
@@ -129,6 +130,7 @@ body::-webkit-scrollbar-thumb {
 
 .contact-left {
   flex: 1;
+  text-align: justify;
 }
 
 .contact-left h3 {
@@ -153,9 +155,9 @@ body::-webkit-scrollbar-thumb {
 
 .contact-info-item i {
   font-size: 28px;
-  color: #ffb742;
+  color: #00003b;
   margin-right: 15px;
-  background: #292b2e;
+  background: #00a2ff;
   width: 50px;
   height: 50px;
   display: flex;
@@ -400,8 +402,8 @@ footer .direitos {
     left: 0;
     width: 100%;
     padding: 20px 0;
-    background: #212529;
-    border-bottom: #ffb742 solid 1px;
+    background: #00003b;
+    border-bottom: #090979 solid 1px;
     display: flex;
     flex-direction: column;
     align-items: center;

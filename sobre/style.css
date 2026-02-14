@@ -65,6 +65,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   cursor: pointer;
   display: none;
+  margin-left: auto;
 }
 
 .navbar ul {
@@ -181,7 +182,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .seprator {
-  margin: 50px 50px 30px;
+  margin: 50px 50px 0px;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.08);
   display: inline-block;
@@ -193,24 +194,30 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 80px;
-  padding: 0 50px;
+  gap: 50px;
+  padding: 50px 50px 100px;
 }
 
 .container-img {
-  width: 280px;
-  height: 280px;
-  border: #7b7b7b solid 4px;
-  border-radius: 50%;
-  overflow: hidden;
+  flex: 1.2;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .about img {
-  width: 280px;
-  border-radius: 50%;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+
+.about .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: justify;
 }
 
 .about .info h3 {
@@ -220,9 +227,22 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 10px;
 }
 
+.about .info h4 {
+  color: #ffb742;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
 .about .info p {
   color: #ccc;
   font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.about .info p span {
+  color: #ffb742;
+  font-weight: 500;
 }
 
 .about .info button {
@@ -340,11 +360,16 @@ footer .direitos {
 @media screen and (max-width: 1100px) {
   .guarantee {
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
   }
 
   .guarantee .item {
-    flex-basis: 49%;
+    flex-basis: calc(50% - 15px);
+  }
+
+  .about {
+    gap: 40px;
+    padding: 60px 30px;
   }
 
   footer {
@@ -373,6 +398,24 @@ footer .direitos {
     flex-basis: 50%;
   }
 
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+    flex-direction: column-reverse;
+    text-align: justify;
+    padding: 50px 20px;
+  }
+
+  .about .info {
+    align-items: center; /* Centraliza o texto e botão no mobile */
+  }
+
+  .container-img {
+    width: 100%;
+    max-width: 400px; /* Controla o tamanho da imagem no mobile */
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -416,13 +459,12 @@ footer .direitos {
     left: 0;
     width: 100%;
     padding: 20px 0;
-    background: #212529;
-    border-bottom: #ffb742 solid 1px;
-    display: flex;
+    background: #00003b;
+    border-bottom: #090979 solid 1px;
+    display: none; 
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    display: none; 
     transition: 0.3s;
   }
 
@@ -447,21 +489,14 @@ footer .direitos {
     flex-basis: 100%;
     margin-bottom: 20px;
   }
-
-  footer .cols .news-col {
-    flex-basis: 100%;
-  }
-
 }
 
 @media screen and (max-width: 480px) {
-
+  .about .info h3 {
+    font-size: 26px;
+  }
+  
   .guarantee .item .info h3 {
     font-size: 20px;
   }
-
-  .guarantee .item .info p {
-    font-size: 12px;
-  }
-
 }

@@ -65,6 +65,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   cursor: pointer;
   display: none;
+  margin-left: auto;
 }
 
 .navbar ul {

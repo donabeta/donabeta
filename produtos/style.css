@@ -75,6 +75,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   cursor: pointer;
   display: none;
+  margin-left: auto;
 }
 
 .navbar ul {
@@ -377,8 +378,8 @@ footer .direitos {
     left: 0;
     width: 100%;
     padding: 20px 0;
-    background: #212529;
-    border-bottom: #ffb742 solid 1px;
+    background: #00003b;
+    border-bottom: #090979 solid 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
