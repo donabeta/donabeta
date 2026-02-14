@@ -164,6 +164,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .contact-info-item h4 {
@@ -174,49 +175,6 @@ body::-webkit-scrollbar-thumb {
 .contact-info-item p {
   margin-bottom: 0;
   color: #7b7b7b;
-}
-
-.contact-right {
-  flex: 1;
-}
-
-.contact-right form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-right input,
-.contact-right textarea {
-  width: 100%;
-  padding: 15px;
-  background: #292b2e;
-  border: 1px solid transparent;
-  outline: none;
-  color: #fff;
-  border-radius: 10px;
-  font-size: 14px;
-  transition: .3s;
-}
-
-.contact-right input::placeholder,
-.contact-right textarea::placeholder {
-  color: #7b7b7b;
-}
-
-.contact-right input:focus,
-.contact-right textarea:focus {
-  border-color: #ffb742;
-  background: #303336;
-}
-
-.contact-right textarea {
-  resize: none;
-}
-
-.contact-right button {
-  width: fit-content;
-  margin-top: 10px;
 }
 
 footer {
