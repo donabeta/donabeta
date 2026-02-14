@@ -168,13 +168,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact-info-item h4 {
-  color: #fff;
+  color: #ffb742;
   font-size: 16px;
 }
 
 .contact-info-item p {
   margin-bottom: 0;
-  color: #7b7b7b;
+  color: #fff;
 }
 
 footer {
